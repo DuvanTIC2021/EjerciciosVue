@@ -10,22 +10,29 @@
 </head>
 
 <body>
+
+
     <div id='app'>
         <div class="container">
             <h3>Operaciones Basicas</h3>
+            <br>
+            
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Número 1</span>
-                <input type="text" class="form-control" placeholder="Ingrese un número">
+                <input v-model.number="num1" type="number" class="form-control" placeholder="Ingrese un número">
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Número 2</span>
-                <input type="text" class="form-control" placeholder="Ingrese un número 2">
+                <input v-model.number="num2" type="number" class="form-control" placeholder="Ingrese un número 2">
             </div>
-            <button type="button" class="btn btn-primary">Sumar</button>
-            <button type="button" class="btn btn-secondary">Restar</button>
-            <button type="button" class="btn btn-success">Multiplicar</button>
-            <button type="button" class="btn btn-danger">Dividir</button>
+            <button @click="sumar" type="button" class="btn btn-primary">Sumar</button>
+            <button @click="restar" type="button" class="btn btn-secondary">Restar</button>
+            <button @click="multiplicar" type="button" class="btn btn-success">Multiplicar</button>
+            <button @click="dividir" type="button" class="btn btn-danger">Dividir</button>
+
+            <h1 v-text="rta" class="text-center" class="form-control" placeholder  class="fas fa-info-circle"></class=>></h1>
         </div>
+    </div>
 </body>
 
 <script src="js/vue.js"></script>
