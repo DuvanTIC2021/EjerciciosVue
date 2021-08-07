@@ -19,8 +19,10 @@ var app = new Vue({
         dividir() {
             if (this.num2 == 0) {
                 this.rta = "Error, NO se puede dividir por cero";
-            } else {
-                this.rta = this.num1 / this.num2;
+            } 
+            
+            else {
+                this.rta  = this.num1 / this.num2; 
             }
         }
 
